@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WwwAgilitikCom</title>
+  <title>agilitik.com</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
+  <div id="page">
+    <div id="sidebar">
+      <ul id="sidebar-items">
+        <li>
+          <h3>Liens</h3>
+          <ul class="links">
+				<li>Services
+				<li>Qui sommes nous ?
+				<li>Blogs
+          </ul>
+        </li>
+      </ul>
+    </div>
 
-<%= yield %>
+    <div id="content">
+      <div id="header">
+        <h1>Bienvenue chez agilitik.com</h1>
+        <h2>C'est en construction !</h2>
+      </div>
 
+      <div id="about">
+        <h3></h3>
+        <div id="about-content" style="display: none"></div>
+      </div>
+
+      <div id="getting-started">
+        <h1></h1>
+        <h2></h2>
+
+       
+      </div>
+    </div>
+
+    <div id="footer">&nbsp;</div>
+  </div>
 </body>
 </html>
