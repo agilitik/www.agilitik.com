@@ -1,176 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Agilitik.com</title>
 	<link rel="icon" href="/favicon.png" type="image/png">
     <style type="text/css" media="screen">
-      body {
-        margin: 0;
-        margin-bottom: 25px;
-        padding: 0;
-        background-color: #f0f0f0;
-        font-family: "Lucida Grande", "Bitstream Vera Sans", "Verdana";
-        font-size: 13px;
-        color: #333;
-		background-image:url('/images/bg.png');
-      }
-	img {border:0}
-
-      h1 {
-        font-size: 28px;
-        color: #000;
-      }
-
-      a  {color: #03c}
-
-
-      #page {
-        
-        width: 750px;
-        margin: 0;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      #content {
-        background-image: url("images/logo.png");
-        background-repeat: no-repeat;
-        background-position: top center;
-        background-color: white;
-        float: left;
-        border: 3px solid #aaa;
-        border-top: none;
-        padding: 25px;
-        width: 550px;
-      }
-
-      #sidebar {
-        float: right;
-        width: 125px;
-      }
-
-      #footer {
-        clear: both;
-		text-align:right;
-      }
-
-
-      #header, #about, #getting-started {
-        padding-left: 75px;
-        padding-right: 30px;
-      }
-
-
-      #header {
-	padding-top:120px;
-      }
-      #header h1, #header h2 {margin: 0}
-      #header h2 {
-        color: #888;
-        font-weight: normal;
-        font-size: 16px;
-      }
-
-
-      #about h3 {
-        margin: 0;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      #about-content {
-        background-color: #ffd;
-        border: 1px solid #fc0;
-        margin-left: -55px;
-        margin-right: -10px;
-      }
-      #about-content table {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        font-size: 11px;
-        border-collapse: collapse;
-      }
-      #about-content td {
-        padding: 10px;
-        padding-top: 3px;
-        padding-bottom: 3px;
-      }
-      #about-content td.name  {color: #555}
-      #about-content td.value {color: #000}
-
-      #about-content ul {
-        padding: 0;
-        list-style-type: none;
-      }
-
-      #about-content.failure {
-        background-color: #fcc;
-        border: 1px solid #f00;
-      }
-      #about-content.failure p {
-        margin: 0;
-        padding: 10px;
-      }
-
-
-      #getting-started {
-        border-top: 1px solid #ccc;
-        margin-top: 25px;
-        padding-top: 15px;
-      }
-      #getting-started h1 {
-        margin: 0;
-        font-size: 20px;
-      }
-      #getting-started h2 {
-        margin: 0;
-        font-size: 14px;
-        font-weight: normal;
-        color: #333;
-        margin-bottom: 25px;
-      }
-      #getting-started ol {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #getting-started li {
-        font-size: 18px;
-        color: #888;
-        margin-bottom: 25px;
-      }
-      #getting-started li h2 {
-        margin: 0;
-        font-weight: normal;
-        font-size: 18px;
-        color: #333;
-      }
-      #getting-started li p {
-        color: #555;
-        font-size: 13px;
-      }
-
-
-      #sidebar ul {
-        margin-left: 0;
-        padding-left: 0;
-      }
-      #sidebar ul h3 {
-        margin-top: 25px;
-        font-size: 16px;
-        padding-bottom: 10px;
-        border-bottom: 1px solid #ccc;
-      }
-      #sidebar li {
-        list-style-type: none;
-      }
-      #sidebar ul.links li {
-        margin-bottom: 5px;
-      }
-.twlink{float:left;color:black;text-decoration:none;}
-.twlink img {margin-right:3px;}
+	body 	{margin:0;margin-bottom:25px;padding:0;font-family:"Lucida Grande", "Bitstream Vera Sans", "Verdana";font-size:1.2em;color:#333;background-image:url('/images/bg.png')}
+	img 	{border:0}
+	#page 	{width:750px;margin:0;margin-left:auto;margin-right:auto}
+	#content{float:left;border:3px solid #aaa;border-top:none;padding:10px 25px 25px 25px;width:100%;background-color:white}
+	#footer {clear:both;text-align:right;font-size:0.8em}
+	#header {display:block;padding-left:420px;padding-top:110px;background:url("images/logo.png") top center no-repeat;text-decoration:none}
+	h1 		{margin:0;color:#888;font-weight:normal;font-size:1.1em}
+	.menu 	{text-align:center;margin-left:auto;margin-right:auto;padding:0}
+	.menu li{display:inline;padding:0px 15px 0 21px;background:url(/images/silverstar.png) no-repeat}
+	a 		{text-decoration:none;color:#888}
+	a:hover {text-decoration:underline;color:black}
+	.twlink	{float:left;color:black;text-decoration:none}
+	.twlink img {margin-right:3px}
     </style>
-<script type="text/javascript">
-
+	<script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-22143256-1']);
   _gaq.push(['_trackPageview']);
@@ -180,44 +28,37 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
-</script>
- </head>
-  <body>
-    <div id="page">
-      <div id="sidebar">
-        <ul id="sidebar-items">
-          <li>
-            <h3>Liens</h3>
-            <ul class="links">
-				<li>Services
-				<li>Qui sommes nous ?
-				<li>Blogs
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div id="content">
-        <div id="header">
-          <h1>Bienvenue chez agilitik.com</h1>
-          <h2>C'est en construction !</h2>
-        </div>
-
-        <div id="about">
-          <h3></h3>
-          <div id="about-content" style="display: none">Agile, Lean, Performances Web, Int&eacute;gration Continue</div>
-        </div>
-
-        <div id="getting-started">
-          <h1></h1>
-          <h2></h2>
-
-         
-        </div>
-      </div>
-
-      <div id="footer"><a href="http://twitter.com/stefounet" class="twlink"><img src="http://twitter.com/phoenix/favicon.ico" width="16" height="16">Twitter</a>  &copy; agilitik.com 2011</div>
-    </div>
-  </body>
+	</script>
+</head>
+<body>
+	<div id="page">
+		<div id="content">
+        	<a id="header" href="/"><h1>Keep It Simple</h1></a>
+        	<ul class="menu">
+				<li><a href="/">Accueil</a></li>
+		        <li><a href="/fr/services">Services</a></li>
+		        <li><a href="/fr/who">Qui sommes nous</a></li>
+				<li><a href="/fr/contact">Contact</a></li>
+				<li><a href="/fr/refs">R&eacute;f&eacute;rences</a></li>
+	         </ul>
+			<p>Agilitik est une soci&eacute;t&eacute; de conseil.</p>
+			<p>Agilitik aime ce qui est simple, transparent, (tr&egrave;s) rapide, bien construit, intelligent, technique.</p>
+			<p>Agilitik se reconna&icirc;t donc dans des domaines tels que :
+			<ul>
+			<li>les m&eacute;thodes Agiles</li>
+			<li>le Lean</li>
+			<li>Ruby On Rails</li>
+			<li>les Performances Webs</li>
+			<li>Nosql</li>
+			<li>DevOps</li>
+			<li>L&#x27;int&eacute;gration continue</li>
+			</ul>
+			</p>
+			<p>Pour en savoir plus, retrouvez <a href="/fr/services">notre offre de service</a> et cherchez &agrave; savoir <a href="/fr/who">qui nous sommes</a> !</p>
+		</div>
+		<div id="footer">
+			<a href="http://twitter.com/stefounet" class="twlink"><img src="http://twitter.com/phoenix/favicon.ico" width="16" height="16">Twitter</a>  &copy; agilitik.com 2011
+		</div>
+	</div>
+</body>
 </html>
