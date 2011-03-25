@@ -1,6 +1,30 @@
 WwwAgilitikCom::Application.routes.draw do
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
+  scope "/:locale" do
+    root :to => "pages#home"
+    match "/contact",  :to => "pages#contact"
+    match "/who",      :to => "pages#who"
+    match "/services", :to => "pages#services"
+    match "/refs", :to => "pages#refs"
+  end
+    get "pages/home"
+    get "pages/contact"
+    get "pages/who"
+    get "pages/refs"
+
+    get "pages/agile"
+
+    get "pages/lean"
+
+    get "pages/ror"
+
+    get "pages/webperfs"
+
+    get "pages/nosql"
+
+    get "pages/devops"
+
+    get "pages/ci"
+  root :to => "pages#home"
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
