@@ -1,20 +1,22 @@
 class PagesController < ApplicationController
   def home
-    @title = "fuck"
-    view = "home.fr.html.erb"
+    @title = "Accueil"
   end
   
   def services
-    
+    @title = "Que faisons nous"    
   end
 
   def contact
+    @title = "Contact"    
   end
 
   def who
+    @title = "Qui sommes nous"    
   end
 
   def refs
+    @title = "References"    
   end
 
   def agile

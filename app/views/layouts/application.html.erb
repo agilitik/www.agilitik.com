@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><%= @title || "" %> Agilitik.com</title>
-	<meta name="Keywords" content="conseil, consultant, ecommerce, agile, lean, ruby on rails, web performance">
+    <title><%= @title || "" %></title>
+	<meta name="Keywords" content="conseil, audit, consultant, ecommerce, agile, lean, ruby on rails, web performance">
 	<meta name="Description" content="Agilitik.com est une société de conseil informatique spécialisée dans le web (ecommerce, ebusiness, medias)">
 	<link rel="icon" href="/favicon.png" type="image/png">
     <style type="text/css" media="screen">
 	body 	{margin:0;padding:0;font-family:"Lucida Grande", "Bitstream Vera Sans", "Verdana";font-size:1.2em;background-image:url('/images/bg.png')}
 	img 	{border:0}
 	.page 	{width:810px;margin:0;margin-left:auto;margin-right:auto}
-	.content{border:3px solid #aaa;border-top:none;padding:10px 20px 25px 20px;background-color:white}
+	.content{border:3px solid #aaa;border-top:none;padding:10px 20px 20px 20px;background-color:white}
 	.footer {clear:both;text-align:right;font-size:0.7em}
 	.footer a {color:black}
 	.header {display:block;padding-left:420px;padding-top:110px;background:url("/images/logo.png") top center no-repeat;text-decoration:none;font-size:1.1em}
 	h1 		{margin:0;font-weight:normal;font-size:1em}
+	h2 		{font-size:0.8em}
 	.menu 	{text-align:center;padding:0}
 	.menu li{display:inline;padding:0px 12px 0 21px;background:url(/images/silverstar.png) no-repeat}
 	a 		{text-decoration:none;color:#888}
@@ -21,17 +22,23 @@
 	.twlink	{float:left}
 	.twlink img {margin-right:3px}
 	.l1 	{list-style: url(/images/redstar.png)}
+	.selected{background:url(/images/redstar.png) no-repeat!important}
+	.selected a {color:#7e0000}
+	.txt, .bio	{font-size:0.75em;margin:15px;}
+	.prezbio	{font-size:0.8em}
+	.sm	{font-size:0.6em}
+	.tuh	{font-style:italic;float:right;color:#7e0000}
     </style>
 	<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-22143256-1']);
-  _gaq.push(['_trackPageview']);
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-22143256-1']);
+	  _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
 	</script>
 </head>
 <body>
@@ -39,11 +46,11 @@
 		<div class="content">
         	<a class="header" href="/">Keep It Simple</a>
         	<ul class="menu">
-				<li><a href="/"><%= t 'home' %></a></li>
-		        <li><a href="/fr/services"><%= t 'services' %></a></li>
-		        <li><a href="/fr/who"><%= t 'who' %></a></li>
-				<li><a href="/fr/refs"><%= t 'refs' %></a></li>
-				<li><a href="/fr/contact"><%= t 'contact' %></a></li>
+				<li <%= classSelected("Accueil") %>><a href="/"><%= t 'home' %></a></li>
+		        <li <%= classSelected("Que faisons nous") %>><a href="/fr/services"><%= t 'services' %></a></li>
+		        <li <%= classSelected("Qui sommes nous") %>><a href="/fr/who"><%= t 'who' %></a></li>
+				<li <%= classSelected("References") %>><a href="/fr/refs"><%= t 'refs' %></a></li>
+				<li <%= classSelected("Contact") %>><a href="/fr/contact"><%= t 'contact' %></a></li>
 	         </ul>
 			<%= yield %>
 		</div>
