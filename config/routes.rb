@@ -5,11 +5,8 @@ WwwAgilitikCom::Application.routes.draw do
     match "/who",      :to => "pages#who"
     match "/services", :to => "pages#services"
     match "/refs", :to => "pages#refs"
+    match "/home", :to => "pages#home"
   end
-    get "pages/home"
-    get "pages/contact"
-    get "pages/who"
-    get "pages/refs"
 
     get "pages/agile"
 

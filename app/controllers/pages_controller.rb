@@ -1,22 +1,22 @@
 class PagesController < ApplicationController
   def home
-    @title = "Accueil"
+    @title = t 'home'
   end
   
   def services
-    @title = "Que faisons nous"    
+    @title = t 'services'   
   end
 
   def contact
-    @title = "Contact"    
+    @title = t 'Contact'
   end
 
   def who
-    @title = "Qui sommes nous"    
+    @title = t 'who'    
   end
 
   def refs
-    @title = "References"    
+    @title = t 'refs'    
   end
 
   def agile

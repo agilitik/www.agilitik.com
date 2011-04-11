@@ -3,3 +3,8 @@
 
 en:
   hello: "Hello world"
+  services: "Services"
+  home: "Home"
+  who: "Who"
+  refs: "References"
+  contact: "Contact"
